@@ -4,6 +4,37 @@
 
  <path>CF6802C.3ds</path>
 
+ <!-- Animations -->
+ <animation>
+  <type>spin</type>
+  <object-name>CoverUH</object-name>
+  <object-name>CoverH</object-name>
+  <object-name>CoverM</object-name>
+  <object-name>CoverL</object-name>
+  <object-name>FanUH</object-name>
+  <object-name>FanH</object-name>
+  <object-name>RootUH</object-name>
+  <object-name>RootH</object-name>
+  <object-name>RootM</object-name>
+  <object-name>RootL</object-name>
+  <object-name>RotorUH</object-name>
+  <object-name>RotorH</object-name>
+  <object-name>RotorM</object-name>
+  <object-name>RotorL</object-name>
+  <property>engines/engine/n1</property>
+  <factor>-10</factor>
+   <center>
+    <x-m>-2.94284</x-m>
+    <y-m>0</y-m>
+    <z-m>-0.90684</z-m>
+   </center>
+   <axis>
+    <x>1</x>
+    <y>0</y>
+    <z>0</z>
+   </axis>
+ </animation> 
+
  <!-- Level of Details -->
  <animation>
   <type>range</type>

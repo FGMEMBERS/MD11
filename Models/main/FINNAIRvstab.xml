@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+ <PropertyList include="VStabilizer.xml">
+  <texture-path>livery/FINNAIR/</texture-path>
+ </PropertyList>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>Cabin.3ds</path>
+
+<!-- Level of Details -->
+ <animation>
+  <type>range</type>
+  <min-m>10</min-m>
+  <max-m>1000</max-m>
+  <object-name>Cabin1</object-name>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>MD-11.3ds</path>  
+<!--
+  <offsets>
+    <z-m>0</z-m>
+    <x-m>-25</x-m>
+    <pitch-deg>-0.5</pitch-deg>
+  </offsets>
+-->
+<!-- Primary flight controls -->
+<animation>
+ <type>rotate</type>
+ <object-name>Aileron01H</object-name>
+ <property>surface-positions/left-aileron-pos-norm</property>
+ <factor>20</factor>
+ <center>
+  <x-m>42.26176</x-m>
+  <y-m>-22.81146</y-m>
+  <z-m>-0.27968</z-m>
+ </center>
+ <axis>
+  <x>-2.44019</x>
+  <y>4.48862</y>
+  <z>-0.22936</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Aileron02H</object-name>
+ <property>surface-positions/left-aileron-pos-norm</property>
+ <factor>20</factor>
+ <center>
+  <x-m>35.10918</x-m>
+  <y-m>-9.47449</y-m>
+  <z-m>-0.83642</z-m>
+ </center>
+ <axis>
+  <x>-0.3033</x>
+  <y>2.08499</y>
+  <z>-0.42945</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Aileron03H</object-name>
+ <property>surface-positions/right-aileron-pos-norm</property>
+ <factor>20</factor>
+ <center>
+  <x-m>34.80588</x-m>
+  <y-m>7.3895</y-m>
+  <z-m>-1.26586</z-m>
+ </center>
+ <axis>
+  <x>0.3033</x>
+  <y>2.08499</y>
+  <z>0.42945</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Aileron04H</object-name>
+ <property>surface-positions/right-aileron-pos-norm</property>
+ <factor>20</factor>
+ <center>
+  <x-m>39.82157</x-m>
+  <y-m>18.32285</y-m>
+  <z-m>-0.50904</z-m>
+ </center>
+ <axis>
+  <x>2.44019</x>
+  <y>4.48862</y>
+  <z>0.22936</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Elev01H</object-name>
+ <object-name>Elev02H</object-name>
+ <property>surface-positions/elevator-pos-norm</property>
+ <factor>30</factor>
+ <center>
+  <x-m>57.70729</x-m>
+  <y-m>-8.77777</y-m>
+  <z-m>1.96712</z-m>
+ </center>
+ <axis>
+  <x>-2.24377</x>
+  <y>4.65299</y>
+  <z>-0.63319</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Elev05H</object-name>
+ <object-name>Elev06H</object-name>
+ <property>surface-positions/elevator-pos-norm</property>
+ <factor>30</factor>
+ <center>
+  <x-m>55.46352</x-m>
+  <y-m>4.12478</y-m>
+  <z-m>1.33393</z-m>
+ </center>
+ <axis>
+  <x>2.24377</x>
+  <y>4.65299</y>
+  <z>0.63319</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Stab01H</object-name>
+ <property>controls/flight/elevator-trim</property>
+ <factor>15</factor>
+ <center>
+  <x-m>57.70729</x-m>
+  <y-m>-8.77777</y-m>
+  <z-m>1.96712</z-m>
+ </center>
+ <axis>
+  <x>-2.24377</x>
+  <y>4.65299</y>
+  <z>-0.63319</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Stab03H</object-name>
+ <property>controls/flight/elevator-trim</property>
+ <factor>15</factor>
+ <center>
+  <x-m>55.46352</x-m>
+  <y-m>4.12478</y-m>
+  <z-m>1.33393</z-m>
+ </center>
+ <axis>
+  <x>2.24377</x>
+  <y>4.65299</y>
+  <z>0.63319</z>
+ </axis>
+</animation>
+
+<!-- Rudder - to be implemented after texturing -->
+
+<!-- Secondary flight controls -->
+
+<animation>
+ <type>rotate</type>
+ <object-name>UFlap01H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>15</factor>
+ <center>
+  <x-m>38.58112</x-m>
+  <y-m>-16.22452</y-m>
+  <z-m>-1.68404</z-m>
+ </center>
+ <axis>
+  <x>-1.98872</x>
+  <y>3.84307</y>
+  <z>-0.41423</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>LFlap01H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>45</factor>
+ <center>
+  <x-m>38.58112</x-m>
+  <y-m>-16.22452</y-m>
+  <z-m>-1.68404</z-m>
+ </center>
+ <axis>
+  <x>-1.98872</x>
+  <y>3.84307</y>
+  <z>-0.41423</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>UFlap02H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>15</factor>
+ <center>
+  <x-m>34.22152</x-m>
+  <y-m>-6.50735</y-m>
+  <z-m>-2.74041</z-m>
+ </center>
+ <axis>
+  <x>-0.63055</x>
+  <y>4.3795</y>
+  <z>-0.87413</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>LFlap02H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>45</factor>
+ <center>
+  <x-m>34.22152</x-m>
+  <y-m>-6.50735</y-m>
+  <z-m>-2.74041</z-m>
+ </center>
+ <axis>
+  <x>-0.63055</x>
+  <y>4.3795</y>
+  <z>-0.87413</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>UFlap03H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>15</factor>
+ <center>
+  <x-m>33.5.9096</x-m>
+  <y-m>2.12785</y-m>
+  <z-m>-3.61455</z-m>
+ </center>
+ <axis>
+  <x>0.63055</x>
+  <y>4.3795</y>
+  <z>0.87413</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>LFlap03H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>45</factor>
+ <center>
+  <x-m>33.5.9096</x-m>
+  <y-m>2.12785</y-m>
+  <z-m>-3.61455</z-m>
+ </center>
+ <axis>
+  <x>0.63055</x>
+  <y>4.3795</y>
+  <z>0.87413</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>UFlap04H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>15</factor>
+ <center>
+  <x-m>36.5924</x-m>
+  <y-m>12.38145</y-m>
+  <z-m>-2.09828</z-m>
+ </center>
+ <axis>
+  <x>1.98872</x>
+  <y>3.84307</y>
+  <z>0.41423</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>LFlap04H</object-name>
+ <property>surface-positions/flap-pos-norm</property>
+ <factor>45</factor>
+ <center>
+  <x-m>36.5924</x-m>
+  <y-m>12.38145</y-m>
+  <z-m>-2.09828</z-m>
+ </center>
+ <axis>
+  <x>1.98872</x>
+  <y>3.84307</y>
+  <z>0.41423</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Spoiler01H</object-name>
+ <object-name>Spoiler02H</object-name>
+ <object-name>Spoiler03H</object-name>
+ <object-name>Spoiler04H</object-name>
+ <property>controls/flight/spoilers</property>
+ <factor>-60</factor>
+ <center>
+  <x-m>38.78489</x-m>
+  <y-m>-17.20658</y-m>
+  <z-m>-0.32515</z-m>
+ </center>
+ <axis>
+  <x>-3.46464</x>
+  <y>6.59798</y>
+  <z>-0.22575</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Spoiler05H</object-name>
+ <property>controls/flight/spoilers</property>
+ <factor>-60</factor>
+ <center>
+  <x-m>34.13898</x-m>
+  <y-m>-7.18997</y-m>
+  <z-m>-1.02446</z-m>
+ </center>
+ <axis>
+  <x>-0.43079</x>
+  <y>2.99205</y>
+  <z>-0.51851</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Spoiler06H</object-name>
+ <property>controls/flight/spoilers</property>
+ <factor>-60</factor>
+ <center>
+  <x-m>33.70819</x-m>
+  <y-m>4.19792</y-m>
+  <z-m>-1.54297</z-m>
+ </center>
+ <axis>
+  <x>0.43079</x>
+  <y>2.99205</y>
+  <z>0.51851</z>
+ </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+ <object-name>Spoiler07H</object-name>
+ <object-name>Spoiler08H</object-name>
+ <object-name>Spoiler09H</object-name>
+ <object-name>Spoiler10H</object-name>
+ <property>controls/flight/spoilers</property>
+ <factor>-60</factor>
+ <center>
+  <x-m>35.32025</x-m>
+  <y-m>10.6086</y-m>
+  <z-m>-0.55089</z-m>
+ </center>
+ <axis>
+  <x>3.46464</x>
+  <y>6.59798</y>
+  <z>0.22575</z>
+ </axis>
+</animation>
+
+</PropertyList>

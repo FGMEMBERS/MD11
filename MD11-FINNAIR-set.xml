@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <sim>
+
+  <description>McDonnel Douglas MD11</description>
+
+  <flight-model>jsb</flight-model>
+  <aero>MD11</aero>
+  <fuel-fraction>1.0</fuel-fraction>
+
+  <systems>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+ 
+   <autopilot>
+     <path>Aircraft/MD11/MD11-autopilot.xml</path>
+   </autopilot>
+  </systems>
+  
+  <sound>
+   <path>Aircraft/A320/A320-sound.xml</path>
+  </sound>
+<!--
+  <panel>
+   <path>Aircraft/737/Panels/737-trans-mini-panel.xml</path>
+   <visibility>true</visibility>
+  </panel>
+-->
+ <panel>
+   <path>Aircraft/737/Panels/737-ifr-panel.xml</path>
+   <visibility>false</visibility>
+  </panel>
+
+  <hud>
+   <path>Huds/Custom/default.xml</path>
+   <visibility>false</visibility>
+  </hud>
+
+  <model>
+   <path>Aircraft/MD11/Models/FINNAIRmd11.xml</path>
+  </model>
+<!--
+  <view>
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y">0</x-offset-m>
+     <y-offset-m archive="y">0</y-offset-m>
+     <z-offset-m archive="y">-25</z-offset-m>
+     <pitch-offset-deg archive="y">-11.0</pitch-offset-deg>
+   </config>
+  </view>
+-->
+
+<view>
+   <internal archive="y">true</internal>
+   <config>
+     <!-- x/y/z == right/up/back -->
+     <x-offset-m archive="y">-0.50899</x-offset-m>
+     <y-offset-m archive="y">-0.96</y-offset-m>
+     <z-offset-m archive="y">-22.722059</z-offset-m>
+     <pitch-offset-deg archive="y">-18.5</pitch-offset-deg>
+   </config>
+  </view>
+
+  <chase-distance-m type="double" archive="y">-110.0</chase-distance-m>
+<!--
+  <current-view>
+     <pitch-offset-deg archive="y">-11.0</pitch-offset-deg>
+  </current-view>
+-->
+  <flaps>
+   <setting>0.000</setting>
+   <setting>0.000</setting> <!-- Flaps 1: 66% Slats only at this detent -->
+   <setting>0.167</setting> <!-- Flaps 5: 100% Slats -->
+   <setting>0.333</setting> <!-- Flaps 10: takeoff -->
+   <setting>0.667</setting> <!-- Flaps 20: takeoff, go-around -->
+   <setting>0.833</setting> <!-- Flaps 25: landing -->
+   <setting>1.000</setting> <!-- Flaps 30: landing -->
+  </flaps>
+
+ </sim>
+<!-- 
+ <consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us archive="y">1500</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us archive="y">1500</level-gal_us>
+   </tank>
+  </fuel>
+ </consumables>
+-->
+ <autopilot>
+   <config>
+     <min-climb-speed-kt type="float">150.0</min-climb-speed-kt>
+     <best-climb-speed-kt type="float">300.0</best-climb-speed-kt>
+     <target-climb-rate-fpm type="float">2000.0</target-climb-rate-fpm>
+     <target-descent-rate-fpm type="float">1500.0</target-descent-rate-fpm>
+     <elevator-adj-factor type="float">3500.0</elevator-adj-factor>
+     <integral-contribution type="float">0.005</integral-contribution>
+     <zero-pitch-throttle type="float">0.0001</zero-pitch-throttle>
+     <zero-pitch-trim-full-throttle type="float">0.0001</zero-pitch-trim-full-throttle>
+     <max-roll-deg type="float">30</max-roll-deg>
+     <max-aileron type="float">1.0</max-aileron>
+   </config>
+ </autopilot>
+ 
+ <engines>
+  <engine n="0">
+    <running>true</running>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+  </engine>
+  <engine n="2">
+    <running>true</running>
+  </engine>
+ </engines>
+ 
+ <input>
+ 
+   <!-- set 25% flap adjustment with each detent --> 
+   <keyboard>
+
+    <key n="82">
+      <name>R</name>
+      <desc>Toggle cutoff on Selected Engine(s)</desc>
+      <binding>
+        <condition>
+        <property>/sim/input/selected/engine[0]</property>
+        </condition>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine[0]/cutoff</property>
+      </binding>
+      <binding>
+        <condition>
+        <property>/sim/input/selected/engine[1]</property>
+        </condition>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine[1]/cutoff</property>
+      </binding>
+    </key>
+
+    <key n="83">
+      <name>S</name>
+      <desc>Fire Starter on Selected Engine(s)</desc>
+      <binding>
+        <condition>
+        <property>/sim/input/selected/engine[0]</property>
+        </condition>
+        <command>property-assign</command>
+        <property>/controls/engines/engine[0]/starter</property>
+        <value type="bool">true</value>
+      </binding>
+      <binding>
+        <condition>
+        <property>/sim/input/selected/engine[1]</property>
+        </condition>
+        <command>property-assign</command>
+        <property>/controls/engines/engine[1]/starter</property>
+        <value type="bool">true</value>
+      </binding>
+    </key>
+   </keyboard>
+ </input>
+
+</PropertyList>
