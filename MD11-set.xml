@@ -15,11 +15,7 @@
   </systems> 
   
   <sound>
-   <audible>true</audible>
    <path>Aircraft/A320/A320-sound.xml</path>
-   <volume>
-      <gear type="double">0.4</gear>
-   </volume>
   </sound>
 <!--
   <panel>
