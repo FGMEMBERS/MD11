@@ -1,4 +1,4 @@
-<FDM_CONFIG NAME="MD11" VERSION="1.61" RELEASE="ALPHA">
+<FDM_CONFIG NAME="MD11" VERSION="1.65" RELEASE="ALPHA">
 <!--
   File:     MD11.xml
   Author:   Aero-Matic v 0.71
@@ -65,14 +65,14 @@
     PITCH 0
     YAW 0
     FEED 0
+   <AC_THRUSTER FILE="direct">
+     XLOC 1325.478
+     YLOC -339
+     ZLOC -40
+     PITCH 0
+     YAW 0
+   </AC_THRUSTER>
   </AC_ENGINE>
-  <AC_THRUSTER FILE="direct">
-    XLOC 1325.478
-    YLOC -339
-    ZLOC -40
-    PITCH 0
-    YAW 0
-  </AC_THRUSTER>
   <AC_ENGINE FILE="CF6-80C2">
     XLOC 140.83
     YLOC 0
@@ -80,14 +80,14 @@
     PITCH 0
     YAW 0
     FEED 1
+   <AC_THRUSTER FILE="direct">
+     XLOC 140.83
+     YLOC 0
+     ZLOC 60
+     PITCH 0
+     YAW 0
+   </AC_THRUSTER>
   </AC_ENGINE>
-  <AC_THRUSTER FILE="direct">
-    XLOC 140.83
-    YLOC 0
-    ZLOC 60
-    PITCH 0
-    YAW 0
-  </AC_THRUSTER>
   <AC_ENGINE FILE="CF6-80C2">
     XLOC 1325.478
     YLOC 339
@@ -95,14 +95,14 @@
     PITCH 0
     YAW 0
     FEED 2
+   <AC_THRUSTER FILE="direct">
+     XLOC 1325.478
+     YLOC 339
+     ZLOC -40
+     PITCH 0
+     YAW 0
+   </AC_THRUSTER>
   </AC_ENGINE>
-  <AC_THRUSTER FILE="direct">
-    XLOC 1325.478
-    YLOC 339
-    ZLOC -40
-    PITCH 0
-    YAW 0
-  </AC_THRUSTER>
   <AC_TANK TYPE="FUEL" NUMBER="0">
     XLOC 1325.478
     YLOC 0 
