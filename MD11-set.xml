@@ -3,6 +3,8 @@
  <sim>
 
   <description>McDonnel Douglas MD11</description>
+  <author>Ampere Hardraade</author>
+  <status>alpha</status>
 
   <flight-model>jsb</flight-model>
   <aero>MD11</aero>
