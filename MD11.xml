@@ -30,15 +30,15 @@
    AC_WINGAREA  3648.00
    AC_WINGSPAN  169.50
    AC_CHORD     21.52
-   AC_HTAILAREA 912.00
+   AC_HTAILAREA 920.00           <!-- original 912.00 -->
    AC_HTAILARM  90.37
-   AC_VTAILAREA 729.60
+   AC_VTAILAREA 605.0            <!-- original 729.60 -->
    AC_LV        90.37
    AC_IXX       13184993
    AC_IYY       38381564
    AC_IZZ       55612703
    AC_IXZ       0
-   AC_EMPTYWT   378300            <!-- original: 378300 -->
+   AC_EMPTYWT   374243            <!-- original: 378300 -->
    AC_CGLOC     1325.5  0.0 -60.2 <!-- original: 1325.5 0.0 -60.2 -->
    AC_AERORP    1325.5  0.0  0.0
    AC_EYEPTLOC  168.7 -30.0 75.0  
@@ -46,7 +46,7 @@
  </METRICS>
  <UNDERCARRIAGE>
   <!--
-     original values for gear, as computed by aeromatic were
+     original values for gear, as computed by aeromatic:
      Values are <x, y, Z> coordinates, spring constant and damping coeffcient
       313.3     0.0 -289.2 189150.0 63050.0
      1378.5, -183.1 -289.2 630500.0 126100.0
@@ -65,13 +65,18 @@
     PITCH 0
     YAW 0
     FEED 0
-   <AC_THRUSTER FILE="direct">
-     XLOC 1325.478
-     YLOC -339
-     ZLOC -40
-     PITCH 0
-     YAW 0
-   </AC_THRUSTER>
+    FEED 1
+    FEED 2
+    FEED 3
+    FEED 4
+
+  <AC_THRUSTER FILE="direct">
+    XLOC 1325.478
+    YLOC -339
+    ZLOC -40
+    PITCH 0
+    YAW 0
+  </AC_THRUSTER>
   </AC_ENGINE>
   <AC_ENGINE FILE="CF6-80C2">
     XLOC 140.83
@@ -79,62 +84,105 @@
     ZLOC 60
     PITCH 0
     YAW 0
+    FEED 0
     FEED 1
-   <AC_THRUSTER FILE="direct">
-     XLOC 140.83
-     YLOC 0
-     ZLOC 60
-     PITCH 0
-     YAW 0
-   </AC_THRUSTER>
+    FEED 2
+    FEED 3
+    FEED 4
+
+  <AC_THRUSTER FILE="direct">
+    XLOC 140.83
+    YLOC 0
+    ZLOC 60
+    PITCH 0
+    YAW 0
+  </AC_THRUSTER>
   </AC_ENGINE>
+
   <AC_ENGINE FILE="CF6-80C2">
     XLOC 1325.478
     YLOC 339
     ZLOC -40
     PITCH 0
     YAW 0
+    FEED 0
+    FEED 1
     FEED 2
-   <AC_THRUSTER FILE="direct">
-     XLOC 1325.478
-     YLOC 339
-     ZLOC -40
-     PITCH 0
-     YAW 0
-   </AC_THRUSTER>
-  </AC_ENGINE>
-  <AC_TANK TYPE="FUEL" NUMBER="0">
+    FEED 3
+    FEED 4
+
+  <AC_THRUSTER FILE="direct">
     XLOC 1325.478
-    YLOC 0 
+    YLOC 339
+    ZLOC -40
+    PITCH 0
+    YAW 0
+  </AC_THRUSTER>
+  </AC_ENGINE>
+
+  <!-- According to [1], the MD11 has a grand total of 5 fuel tanks -->
+  <!-- Two (left/right) wing tanks, one main center tank            -->
+  <!-- One Auxilary tank                                            -->
+  <!-- One Tank in the tail. IIRC, this tank is optional though     --> 
+  <!-- Tanks Section                                                -->
+  <!-- Capacity in pounds of each tank is as follows                -->
+  <!-- -->
+  <!-- Left Wing  : 40491 pounds                                    -->
+  <!-- Right Wing : 40491 pounds                                    -->
+  <!-- Center tank: 64040 pounds                                    -->
+  <!-- Auxilary   : 98111 pounds                                    -->
+  <!-- Tail Tank  : 13124 pounds                                    -->
+
+ <!-- Left Wing -->
+ <AC_TANK TYPE="FUEL" NUMBER="0">
+    XLOC 1325.478
+    YLOC -202 
     ZLOC -60.249
     RADIUS 1 
-    CAPACITY  9851.6
-    CONTENTS  4925.8
+    CAPACITY  40491.0
+    CONTENTS  40491.0
   </AC_TANK>
+
+  <!-- Right Wing -->
   <AC_TANK TYPE="FUEL" NUMBER="1">
     XLOC 1325.478
-    YLOC 0 
+    YLOC 202 
     ZLOC -60.249
     RADIUS 1 
-    CAPACITY  9851.6
-    CONTENTS  4925.8
+    CAPACITY  40491.0
+    CONTENTS  40491.0
   </AC_TANK>
+
+  <!-- Main Center -->
   <AC_TANK TYPE="FUEL" NUMBER="2">
     XLOC 1325.478
     YLOC 0 
     ZLOC -60.249
     RADIUS 1 
-    CAPACITY  9851.6
-    CONTENTS  4925.8
+    CAPACITY  64040.0
+    CONTENTS  64040.0
   </AC_TANK>
+
+  <!-- Auxilary -->
   <AC_TANK TYPE="FUEL" NUMBER="3">
     XLOC 1325.478
     YLOC 0 
     ZLOC -60.249
     RADIUS 1 
-    CAPACITY  9851.6
-    CONTENTS  4925.8
+    CAPACITY  98111.0
+    CONTENTS  98111.0
   </AC_TANK>
+
+ <!-- Tail -->
+  <AC_TANK TYPE="FUEL" NUMBER="4">
+    XLOC 2405.478                    <!-- Was 1325.478 -->
+    YLOC 0 
+    ZLOC 240.00                      <!-- Was  -60.249 -->
+    RADIUS 1 
+    CAPACITY  13124.0
+    CONTENTS  13124.0
+  </AC_TANK>
+
  </PROPULSION>
  <FLIGHT_CONTROL NAME="MD11">
    <COMPONENT NAME="Pitch Trim Sum" TYPE="SUMMER">
@@ -209,10 +257,16 @@
    </COMPONENT>
    <COMPONENT NAME="Flaps Control" TYPE="KINEMAT">
      INPUT   fcs/flap-cmd-norm
-     DETENTS 3
-             0   0
-             15  4
-             30  3
+    DETENTS 9
+             0       0
+             0.125   5
+             0.250   4
+             0.375   3
+             0.500   2
+             0.625   2
+             0.750   2
+             0.875   2
+             1.000   2  
      OUTPUT  fcs/flap-pos-deg
    </COMPONENT>
    <COMPONENT NAME="Gear Control" TYPE="KINEMAT">
@@ -403,3 +457,6 @@
   </AXIS>
  </AERODYNAMICS>  
 </FDM_CONFIG>
+
+<!-- References -->
+<!-- http://www.simviation.com/rinfofuel.htm -->

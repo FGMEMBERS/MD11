@@ -4,14 +4,185 @@
 
  <path>MD-11.3ds</path>
  <offsets>
-   <z-m>0</z-m>
+   <z-m>-2.0</z-m>
    <x-m>-25</x-m>
-   <pitch-deg>-0.5</pitch-deg>
+   <pitch-deg>-0.0</pitch-deg>
  </offsets>
 
 <!-- Cockpit -->
  <model>
   <path>Aircraft/MD11/Models/cockpit/cockpit.xml</path>
+ </model>
+
+<!-- CRTs, Captains Chair -->
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-pfd-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>-0.55</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>-0.338</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>-0.126</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- CRTs, First Officers Chair -->
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-pfd-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>0.55</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>0.338</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>0.126</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- Backup Instruments -->
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-ai-jw.xml</path>
+  <offsets>
+   <x-m>+1.51</x-m>
+   <y-m>0.05</y-m>
+   <z-m>0.32</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-asi-jw.xml</path>
+  <offsets>
+   <x-m>+1.51</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.32</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model> 
+
+
+
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-alt-jw.xml</path>
+  <offsets>
+   <x-m>+1.495</x-m>
+   <y-m>0.10</y-m>
+   <z-m>0.7</z-m>
+   <pitch-deg>-20.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-mcp-jw.xml</path>
+  <offsets>
+   <x-m>+1.495</x-m>
+   <y-m>-0.057</y-m>
+   <z-m>0.7</z-m>
+   <pitch-deg>-20.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-efisp-jw.xml</path>
+  <offsets>
+   <x-m>+1.495</x-m>
+   <y-m>-0.32</y-m>
+   <z-m>0.7</z-m>
+   <pitch-deg>-20.0</pitch-deg>
+  </offsets>
+ </model>
+
+
+<!-- Number 1 engine -->
+ <model>
+  <path>Aircraft/MD11/Models/cowlings/EngCowl1.xml</path>
+  <offsets>
+    <y-m>-8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MD11/Models/engine/engine1.xml</path>
+  <offsets>
+    <y-m>-8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- Number 2 engine -->
+ <model>
+  <path>Aircraft/MD11/Models/cowlings/EngCowl2.xml</path>
+  <offsets>
+    <y-m>0</y-m>
+    <z-m>5.08637</z-m>
+    <x-m>57.98793</x-m>
+    <pitch-deg>3.01467</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MD11/Models/engine/engine2.xml</path>
+ </model>
+
+<!-- Number 3 engine -->
+ <model>
+  <path>Aircraft/MD11/Models/cowlings/EngCowl1.xml</path>
+  <offsets>
+    <y-m>8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MD11/Models/engine/engine1.xml</path>
+  <offsets>
+    <y-m>8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
  </model>
 
 <!-- Primary flight controls -->
@@ -85,8 +256,8 @@
 
 <animation>
  <type>rotate</type>
- <object-name>Elevator01</object-name>
- <object-name>Elevator02</object-name>
+ <object-name>Elev01H</object-name>
+ <object-name>Elev02H</object-name>
  <property>surface-positions/elevator-pos-norm</property>
  <factor>18</factor>
  <center>
@@ -103,8 +274,8 @@
 
 <animation>
  <type>rotate</type>
- <object-name>Elevator05</object-name>
- <object-name>Elevator06</object-name>
+ <object-name>Elev05H</object-name>
+ <object-name>Elev06H</object-name>
  <property>surface-positions/elevator-pos-norm</property>
  <factor>18</factor>
  <center>
@@ -121,7 +292,7 @@
 
 <animation>
  <type>rotate</type>
- <object-name>Stabilizer01</object-name>
+ <object-name>Stab01H</object-name>
  <property>controls/flight/elevator-trim</property>
  <factor>18</factor>
  <center>
@@ -138,7 +309,7 @@
 
 <animation>
  <type>rotate</type>
- <object-name>Stabilizer03</object-name>
+ <object-name>Stab03H</object-name>
  <property>controls/flight/elevator-trim</property>
  <factor>18</factor>
  <center>
