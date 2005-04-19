@@ -79,6 +79,21 @@
    <setting>1.000</setting> <!-- Flaps 30: landing -->
   </flaps>
 
+  <help>
+   <key>
+    <name>Ctrl-B</name>
+    <desc>toggle speed brake</desc>
+   </key>
+   <key>
+    <name>R</name>
+    <desc>toggle cutoff on selected engine(s)</desc>
+   </key>
+   <key>
+    <name>S</name>
+    <desc>fire starter on selected engine(s)</desc>
+   </key>
+  </help>
+
  </sim>
 <!-- 
  <consumables>
