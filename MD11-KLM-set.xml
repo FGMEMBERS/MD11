@@ -9,10 +9,6 @@
   <fuel-fraction>1.0</fuel-fraction>
 
   <systems>
-   <electrical>
-    <path>Aircraft/Generic/generic-electrical.xml</path>
-   </electrical>
- 
    <autopilot>
      <path>Aircraft/MD11/MD11-autopilot.xml</path>
    </autopilot>
