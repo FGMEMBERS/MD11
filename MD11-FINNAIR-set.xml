@@ -2,7 +2,15 @@
 <PropertyList>
  <sim>
 
-  <description>McDonnel Douglas MD11</description>
+  <description>McDonnel Douglas MD11 - Finnair</description>
+  <author>Ampere Hardraade</author>
+  <status>alpha</status>
+  <rating>
+   <FDM type="int">2</FDM>
+   <systems type="int">1</systems>
+   <cockpit type="int">2</cockpit>
+   <model type="int">2</model>
+  </rating>
 
   <flight-model>jsb</flight-model>
   <aero>MD11</aero>
