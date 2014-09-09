@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+ <PropertyList include="EngCowl1.xml">
+  <texture-path>livery/MD11/</texture-path>
+ </PropertyList>

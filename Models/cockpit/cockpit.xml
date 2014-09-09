@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>cockpit.3ds</path>
+
+<!-- CRTs, Captains Chair -->
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-pfd-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>-0.55</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>-0.338</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>-0.126</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- CRTs, First Officers Chair -->
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-pfd-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>0.55</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>0.338</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-enav-jw.xml</path>
+  <offsets>
+   <x-m>+1.48</x-m>
+   <y-m>0.126</y-m>
+   <z-m>0.470</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- Backup Instruments -->
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-ai-jw.xml</path>
+  <offsets>
+   <x-m>+1.51</x-m>
+   <y-m>0.05</y-m>
+   <z-m>0.32</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-asi-jw.xml</path>
+  <offsets>
+   <x-m>+1.51</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>0.32</z-m>
+   <pitch-deg>-10.0</pitch-deg>
+  </offsets>
+ </model> 
+
+
+
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-alt-jw.xml</path>
+  <offsets>
+   <x-m>+1.495</x-m>
+   <y-m>0.10</y-m>
+   <z-m>0.7</z-m>
+   <pitch-deg>-20.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-mcp-jw.xml</path>
+  <offsets>
+   <x-m>+1.495</x-m>
+   <y-m>-0.057</y-m>
+   <z-m>0.7</z-m>
+   <pitch-deg>-20.0</pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/747/Models/boeing747-400-efisp-jw.xml</path>
+  <offsets>
+   <x-m>+1.495</x-m>
+   <y-m>-0.32</y-m>
+   <z-m>0.7</z-m>
+   <pitch-deg>-20.0</pitch-deg>
+  </offsets>
+ </model>
+
+</PropertyList>

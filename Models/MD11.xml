@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>dummy.3ds</path>  
+  <offsets>
+    <z-m>-2.0</z-m>
+    <x-m>-25</x-m>
+    <pitch-deg>-0.5</pitch-deg>
+  </offsets>
+
+<!-- Aircraft -->
+ <model>
+  <name>MD11MainBranch</name>
+  <path>Aircraft/MD11/Models/main/MD11main.xml</path>
+ </model>
+
+<!-- Cockpit -->
+ <model>
+  <path>Aircraft/MD11/Models/cockpit/cockpit.xml</path>
+ </model>
+
+<!-- Cabin -->
+ <model>
+  <name>CabinMainBranch</name>
+  <path>Aircraft/MD11/Models/cabin/cabin.xml</path>
+ </model>
+
+<!-- Stabilizer -->
+ <model>
+  <path>Aircraft/MD11/Models/main/MD11vstab.xml</path>
+ </model>
+
+<!-- Number 1 engine -->
+ <model>
+  <path>Aircraft/MD11/Models/cowlings/MD11cowl1.xml</path>
+  <offsets>
+    <y-m>-8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MD11/Models/engine/engine1.xml</path>
+  <offsets>
+    <y-m>-8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets> 
+ </model>
+
+<!-- Number 2 engine -->
+ <model>
+  <path>Aircraft/MD11/Models/cowlings/MD11cowl2.xml</path>
+  <offsets>
+    <y-m>0</y-m>
+    <z-m>5.08637</z-m>
+    <x-m>57.98793</x-m>
+    <pitch-deg>3.01467</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MD11/Models/engine/engine2.xml</path>
+  <offsets>
+    <y-m>0</y-m>
+    <z-m>5.08637</z-m>
+    <x-m>57.98793</x-m>
+    <pitch-deg>3.01467</pitch-deg>
+  </offsets>
+ </model>
+
+<!-- Number 3 engine -->
+ <model>
+  <path>Aircraft/MD11/Models/cowlings/MD11cowl1.xml</path>
+  <offsets>
+    <y-m>8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/MD11/Models/engine/engine3.xml</path>
+  <offsets>
+    <y-m>8.2</y-m>
+    <z-m>-1.90974</z-m>
+    <x-m>27.34461</x-m>
+    <pitch-deg>1.5</pitch-deg>
+  </offsets>
+ </model>
+
+
+<!-- Mesh reording -->
+<!--
+ <animation>
+   <object-name>CabinMainBranch</object-name>
+   <object-name>MD11MainBranch</object-name>
+ </animation>
+-->
+</PropertyList>
