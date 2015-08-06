@@ -11,6 +11,7 @@
    <cockpit type="int">2</cockpit>
    <model type="int">2</model>
   </rating>
+  <variant-of>MD11</variant-of>
 
   <flight-model>jsb</flight-model>
   <aero>MD11</aero>
@@ -21,7 +22,7 @@
      <path>Aircraft/MD11/MD11-autopilot.xml</path>
    </autopilot>
   </systems>
-  
+
   <sound>
    <path>Aircraft/A320/A320-sound.xml</path>
   </sound>
@@ -99,7 +100,7 @@
   </help>
 
  </sim>
-<!-- 
+<!--
  <consumables>
   <fuel>
    <tank n="0">
@@ -125,7 +126,7 @@
      <max-aileron type="float">1.0</max-aileron>
    </config>
  </autopilot>
- 
+
  <engines>
   <engine n="0">
     <running>true</running>
@@ -137,10 +138,10 @@
     <running>true</running>
   </engine>
  </engines>
- 
+
  <input>
- 
-   <!-- set 25% flap adjustment with each detent --> 
+
+   <!-- set 25% flap adjustment with each detent -->
    <keyboard>
 
     <key n="82">
